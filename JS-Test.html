@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS-TEST</title>
+    </head>
+    <body>
+        <script>
+
+            function add7(x) {
+                return Number(x) + 7;
+            }
+            let temp = prompt("Enter a number")
+            console.log(add7(temp))
+
+            function multiply(x,y){
+                return x*y;
+            }
+            temp = prompt("Enter a number")
+            let temp2 = prompt("Enter a number")
+            console.log(multiply(temp, temp2))
+
+            function capitalize(str){
+                let temp = str.toLowerCase()
+                let tempFirst = temp[0]
+                tempFirst = tempFirst.toUpperCase()
+                let tempRest = temp.slice(1)
+                return tempFirst.concat(tempRest);
+            }
+            temp = prompt("Enter a String")
+            console.log(capitalize(temp))
+            
+            function lastLetter(str){
+                let temp = str.slice(-1)
+                return temp;
+            }
+            temp = prompt("Enter a String")
+            console.log(lastLetter(temp))
+
+        </script>
+    </body>
+</html>
